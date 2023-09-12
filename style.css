@@ -15,3 +15,132 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+.background {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 254px;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(0, 152, 163, 0.7), rgba(0, 80, 255, 0.8)),
+    url('https://images.unsplash.com/photo-1509697452888-7cdcf2c98813?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80');
+}
+
+.first-heading {
+  font-size: 65px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 75px;
+  text-shadow: 7.5px 0.5px 5.5px rgba(46, 46, 46, 0.4);
+}
+
+.first-heading--special {
+  font-weight: 300;
+}
+
+.container {
+  width: 1050px;
+  height: 520px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 3px rgba(10, 10, 10, 0.1);
+  margin-top: 55px;
+  display: flex;
+  overflow: hidden;
+}
+
+.textarea {
+  resize: none;
+  flex: 2;
+  font: inherit;
+  padding: 1.875rem 2.5rem;
+  font-size: 1.375rem;
+}
+
+.textarea::placeholder {
+  font-weight: 500;
+  color: #959c9f;
+}
+
+.stats {
+  flex: 1.3;
+  background-color: #f1f6f8;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stat {
+  flex: 1 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat:nth-child(1),
+.stat:nth-child(2) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+.stat:nth-child(3),
+.stat:nth-child(4) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.stat_number {
+  color: #4d5457;
+  font-weight: 600;
+  font-size: 2.1875rem;
+  margin-bottom: 10px;
+}
+
+.stat_number--limit {
+  color: red;
+}
+
+.second-heading {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #747a7c;
+}
+
+.footer {
+  width: 1050px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.4;
+}
+
+@media (max-width: 1150) {
+  .container {
+    width: 85vw;
+    flex-direction: column;
+  }
+
+  .first-heading {
+    font-size: 7vw;
+  }
+
+  .stat {
+    padding: 15px 10px;
+  }
+
+  .stat:nth-child(1),
+  .stat:nth-child(2),
+  .stat:nth-child(4) {
+    border: none;
+  }
+
+  .stat_number {
+    font-size: 20px;
+  }
+
+  .footer {
+    width: initial;
+    flex-direction: column;
+    align-items: center;
+  }
+}
