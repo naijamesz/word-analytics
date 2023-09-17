@@ -22,8 +22,8 @@ body {
   z-index: -1;
   height: 254px;
   width: 110%;
-  background-image: linear-gradient(to right, rgba(0, 152, 163, 0.7), rgba(0, 17, 255, 0.6)),
-    url('https://images.unsplash.com/photo-1509697452888-7cdcf2c98813?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fitw=1887&q=100');
+  background-image: linear-gradient(to right, rgba(0, 152, 163, 0.6), rgba(0, 17, 255, 0.6)),
+    url('https://images.unsplash.com/photo-1509697452888-7cdcf2c98813?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fitw=1987&q=100');
 }
 
 .first-heading {
