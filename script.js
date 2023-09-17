@@ -10,12 +10,12 @@ const inputHandler = () => {
     alert(`You can't use <script> in your text.`)
     textareaEl.value = textareaEl.value.replace('<script>', '')
   }
-
   // determine new numbers
   let numberOfWords = textareaEl.value.split(' ').length
   if (textareaEl.value.length === 0) {
     numberOfWords = 0
   }
+  // console.log(textareaEl.value)
 
   const numberOfCharacters = textareaEl.value.length
   const twitterCharactersLeft = 280 - numberOfCharacters
@@ -42,3 +42,14 @@ const inputHandler = () => {
 }
 
 textareaEl.addEventListener('input', inputHandler)
+// textareaEl.addEventListener('input', function () {
+//   // determine new numberss
+//   const numberOfCharacters = textareaEl.value.length
+//   const twitterCharactersLeft = 280 - numberOfCharacters
+//   const facebookCharactersLeft = 2200 - numberOfCharacters
+
+//   // set new numberss
+//   charactersNumberEl.textContent = numberOfCharacters
+//   twitterNumberEl.textContent = twitterCharactersLeft
+//   facebookNumberEl.textContent = facebookCharactersLeft
+// })
